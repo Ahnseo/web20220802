@@ -1,0 +1,32 @@
+d2coding
+https://github.com/naver/d2codingfont
+
+7zip
+https://www.7-zip.org/
+
+유용한 사이트
+https://www.w3schools.com/
+
+자바 교육은 이클립스
+
+github.com/sebaek
+깃허브 이용 프로그램
+'코딩 커뮤니티, 기록관리'
+1. git scm 설치 ( all next, veiw release notes 해제 )
+->시작->git bash -> 폰트설정
+->git 최초설정 
+
+*사용자 정보
+Git을 설치하고 나서 가장 먼저 해야 하는 것은 
+사용자이름과 이메일 주소를 설정하는 것이다.
+ Git은 커밋할 때마다 이 정보를 사용한다. 한 번 커밋한 후에는 정보를 변경할 수 없다.
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com(구글링)
+
+확인방법
+$ git config --global --list
+
+------------
+2. github desktop 설치
+계정 연결
+
