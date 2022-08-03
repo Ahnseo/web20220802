@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 태그명이 달라도 같은 클래스로 묶을 수있음. */
+         .error{
+                text-decoration: line-through;
+                color: pink;
+            }
+            .special{
+                font-size: 3em;
+
+            }
+            .fire{
+                background-color: red;
+            }
+        </style>
+</head>
+<body>
+    <h1 class="error">Lorem, ipsum dolor.</h1>
+    <h1 class="error fire">Dignissimos, mollitia possimus?</h1>
+    <h1 class="fire">Ad, cum ita</h1>
+    <h1>Dolorem, optio quos.</h1>
+    <h1>Aperiam, ea ipsa?</h1>
+
+    <p class="error">Lorem ipsum dolor sit amet.</p>
+    <p class="special error">Vero tempore dignissimos doloribus impedit.</p>  
+    <!-- 위의 예시로 모두 적용됨, 하나의 요소는 여러 클래스 값을 가질 수 있다. -->
+    <!-- 여러 클래스명은 스페이스로 구분된다.-->
+    <!-- 클래스명은 영문대소문자, 숫자, -, _ 만 사용가능    -->
+    <p>Sed, tenetur perspiciatis! Sed, placeat!</p>
+    <p>Sed blanditiis autem dignissimos libero!</p>
+    <p>Quo quos at error voluptatem.</p>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <!-- CSS Property Referance -->
+    <h1>1. Style Attribute</h1>
+        <h1 style="color:red;">Lorem.</h1>
+        <h1 style="color: blue;">Reiciendis!</h1>
+        <h1 style="color:green;">Esse?</h1>
+        <h1 style="color:orange;">Nam!</h1>
+        <h1 style="color: purple;">Ipsum.</h1>
+            <br><hr><br>
+
+        <h1 style="text-align:left;">Lorem.</h1> <!-- 왼쪽 정렬-->
+        <h1 style="text-align:center;">Corporis?</h1> <!--가운데 정렬-->
+        <h1 style="text-align:right;">Fugiat.</h1> <!--오른쪽 정렬-->
+            <br><hr><br>
+
+        <h1 style="color:chocolate; text-align:center;">Lorem.</h1>
+        <h1 style="color:purple; text-align:right;">Tempore!</h1>
+            <br><hr><br>
+
+    <!-- Property inherit --> 
+    <h1>2-1. Style의 상속</h1>   
+        <h2>1. 상속되는 </h2>
+    <!-- ul[style]>li*5>lorem1 -->
+        <ul style="text-align: center;">     <!-- 상속되는 property -->
+            <li>Lorem.</li>
+            <li>Natus?</li>
+            <li>Molestias?</li>
+            <li>Aliquam.</li>
+            <li>Vitae.</li>
+        </ul>  
+            <br>
+
+        <h2>2.상속되지 않는</h2>    
+        <ul style="border: 5px solid;">   <!-- 상속 안되는 property -->
+            <li>Lorem.</li>
+            <li>Natus?</li>
+            <li>Molestias?</li>
+            <li>Aliquam.</li>
+            <li>Vitae.</li>
+        </ul>   
+            <br><hr><br>
+    
+    <h1>2-2. Style Unit</h1>
+        <h2>1. px</h2>        
+    <!-- Property Unit 많이 사용하는 px , em , %, width  -->  
+        <h1 style="font-size: 30px;">Lorem, ipsum dolor.</h1>
+        <h1 style="font-size: 15px;">Lorem, ipsum dolor.</h1>         
+        <br>
+
+        <h2>2. em</h2>
+    <!-- em, %  : 부모( body>h태크=p태그 ) 폰트크기 기준 몇배 -->
+        <!-- h1>lorem1^p>lorem1     -->
+        <h1 style="font-size: 3em;">Lorem.</h1>
+        <p style="font-size: 3em;">Lorem.</p>
+        <br>
+
+        <h2>3. %</h2>
+        <h1 style="font-size: 300%;">Lorem.</h1>
+        <p style="font-size: 300%;">Lorem.</p> 
+        <br>
+
+        <h2>4. width</h2>
+        <!-- ul>li*2>lorem1 -->
+        <ul style="width: 500px;">
+            <li style="width: 400;">Lorem.</li>
+            <li style="width: 50%;">Atque!</li>
+        <!-- 글자크기는 적용방법이 다양하므로, 검사로 확인가능 -->    
+        </ul>
+        <br><hr><br>
+
+
+</body>
+</html>
