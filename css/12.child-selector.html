@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    p{
+        text-decoration: underline;
+    }
+    /* Child Selector 기호 :  >     */
+    .error>p{
+        background-color: yellow;  
+        /* Selector 우선수위  .error(class) > div (element) */
+        /* 따라서, 배경색 노랑 결정 (아쿠아색 결정안됨) */
+    }
+    div>p{
+        background-color: aqua; 
+        border: 3px solid;
+    }
+</style>
+</head>
+<body>
+
+    <!-- .note>.error>p>lorem : 그냥 만들면 div 설정됨 -->
+    <div class="note">
+        <div class="error">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quidem reiciendis harum, voluptatem molestiae, earum nobis impedit architecto facilis ex esse et iure natus? Amet numquam veniam maxime ipsam iusto.
+            </p>
+        </div>
+    </div>
+
+
+
+    <!-- .error>.note>p>lorem -->
+    <div class="error">
+        <div class="note">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolor impedit maiores optio voluptatem dolorum, eos assumenda aliquid doloremque earum illo vitae non perspiciatis aspernatur autem recusandae, tempora cupiditate velit.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

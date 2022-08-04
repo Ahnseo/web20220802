@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    h1{
+        font-size: 2em;
+    }
+    p{
+        font-size: 2em;
+    }
+
+    h1, p {
+        color:blue;
+    } /*  그룹셀렉터 */
+    .note{
+        background-color: yellow;
+    }
+    h1.note{
+        text-decoration: underline;
+    } /* h1요소이면서 note클래스인 요소들 선택 적용 */
+    p.note{
+        border:  5px solid;
+    }/* p요소이면서 note클래스인 요소들 선택 적용 */
+    h1.note.fire{
+        background-color: red;
+    }
+    h1#head3{
+        font-size: 3em;
+    } 
+    h1#head4.special.note{
+        text-align: center;
+    }
+
+</style>
+</head>
+<body>
+    <!-- h1*5>lorem2^p*5>lorem3 -->
+    <h1 class="note">Lorem, ipsum.</h1>
+    <h1 class="note fire">Unde, consequuntur!</h1> 
+    <h1 id="head3">Est, id.</h1>
+    <h1 id="head4" class="special note">Nemo, quae?</h1> 
+    <!-- 조합이 많다면, 검사로 확인 -->
+    <h1>Odio, similique.</h1>
+    <p class="note">Lorem, ipsum dolor.</p>
+    <p>Eligendi, tempora perspiciatis.</p>
+    <p>Error, minima praesentium!</p>
+    <p>Debitis, minus a.</p>
+    <p>Corrupti, consequuntur quod?</p>
+
+</body>
+</html>

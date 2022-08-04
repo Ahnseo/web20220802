@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    p{
+        color: blue;
+    }
+    .error>p{
+        text-decoration: line-through
+    }
+
+    /* 자손 선택자 : 스페이스 사용 */
+    .error p{
+        border: 2px solid brown;
+    }
+    /* 조상 중에 error클래스를 갖고있다면, 적용 */
+
+</style>
+</head>
+<body>
+    <!-- .note>.error>p>lorem^^^.error>.note>p>lorem -->
+    <div class="note">
+        <div class="error">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi commodi nostrum blanditiis, dicta laudantium non nemo ea? Quas obcaecati officia corrupti, exercitationem quam, distinctio maxime sint adipisci repudiandae, quae voluptas?
+            </p>
+        </div>
+    </div>
+    <div class="error">
+        <div class="note">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ut illum ullam provident obcaecati, doloremque sequi dolorem repudiandae consequatur eligendi tenetur ratione quae repellendus deleniti odio explicabo ipsa qui nulla.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

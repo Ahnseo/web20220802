@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    /* 가상선택자 :target은 활성화된 링크 태그에 사용하며 선택된 영역에만 스타일을 부여할 수 있다. 
+        */
+    a[target="_blank"]{
+        background-color: yellow;
+    }
+</style>
+</head>
+<body>
+
+    <!-- a[target]*3>lorem1 -->
+    <a href="https://www.google.com" target="_blank"> <!--_blank :링크가 새탭으로 실행-->
+        Lorem.
+    </a>
+    <a href="https://www.daum.net" target=""><!-- target 설정 안하면, 기존 탭에서 링크 실행-->
+        Excepturi.
+    </a>
+</body>
+</html>

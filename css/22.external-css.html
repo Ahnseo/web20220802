@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+<style>
+    /* 링크 이외에도 style설정 계속 할수있음 */
+
+    #table01.my-table td{
+        color: blue;
+        border: 5px solid; 
+    }
+</style>   
+
+    <!-- link:css 적용 -->
+    <link rel="stylesheet" href="Table style01.css">
+
+</head>
+<body>
+     <!-- table>tr*3>td*4>lorem1 -->
+     <table id="table01" class="my-table">
+        <tr>
+            <!-- inline 스타일은 우선 적용. 즉,태크안에 직접 넣으면 우선 적용-->
+            <td style="border: 10px solid red;">
+                Lorem.
+            </td>
+            <td>
+                Corrupti!
+            </td>
+            <td>
+                Neque!
+            </td>
+            <td>
+                Blanditiis!
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Lorem.
+            </td>
+            <td>
+                Corrupti!
+            </td>
+            <td>
+                Eum!
+            </td>
+            <td>
+                Nostrum?
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Lorem.
+            </td>
+            <td>
+                Similique.
+            </td>
+            <td>
+                Unde.
+            </td>
+            <td>
+                Animi.
+            </td>
+        </tr>
+     </table>
+</body>
+</html>
