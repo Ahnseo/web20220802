@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    
+    h1:nth-child(odd), 
+    a:nth-child(odd){
+        background-color: gold;
+    }
+    h1:nth-child(even), 
+    a:nth-child(even){
+        background-color: aqua;
+    } 
+
+    h1{
+            display: inline;    /*h1요소는 기본 block 형태라서, inline으로 변경해봄 */
+    }
+    a{
+     display: block;            /* a 요소는 기본 inline 형태라서, block으로 변경해봄*/
+     width: 300px;
+     height: 50px;
+    }
+    /*flexbox 이용*/
+    /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/     */
+    
+    </style>
+</head>
+<body>
+    <h1>
+        Lorem, ipsum.
+    </h1>
+    <h1>
+        Magni, praesentium.
+    </h1>
+    <h1>
+        Nemo, corporis!
+    </h1>
+    <hr>
+    <a href="">
+        Lorem.
+    </a>
+    <a href="">
+        Cumque.
+    </a>
+    <a href="">
+        Facilis.
+    </a>
+</body>
+</html>

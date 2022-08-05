@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<!-- inline element -->
+<head>
+    <style>
+        a:nth-child(odd){
+            background-color: gold;
+        }
+        a:nth-child(even){
+            background-color: aqua;
+        }
+
+        a{
+            width: 200px;  /*적용안됨*/
+            height: 50;     /*적용안됨*/
+            padding: 5; /*적용되지만 겹침*/
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <a href="">
+        lorem.
+    </a>
+    <a href="">
+        Lorem.
+    </a>
+    <a href="">
+        Lorem.
+    </a>
+    <img src="" alt="그림01">
+    <img src="" alt="그림02">
+    <h1>inline element</h1>
+    <p>필요한 너비 만큼만 갖고, 같은줄에 배치       </p>
+    <p>width, height, padding, margine이 의도대로 적용 안됨.</p>
+    <p>그래서 span 사용. </p>
+    <p>대표적인 inline element : span</p>
+</body>
+</html>

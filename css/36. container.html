@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+
+<!-- style="flex: ;" -->
+<html>
+<head>
+
+    <style>
+        .item:nth-child(odd){
+            background-color: gold;
+        }
+        .item:nth-child(even){
+            background-color: aqua;
+        }
+        .container{
+            background-color: chocolate;
+            display: flex;
+            height: 200PX;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- .container>item*5{$} -->
+    <div class="container">
+        <div id="1" class="item" style="flex: 0.2;"> 1</div>
+        <div id="2" class="item"style="flex: 0.3;">2</div>
+        <div id="3" class="item" style="flex: 0.5;">3</div>
+        <div id="4" class="item" style="flex: 1;">4</div>
+        <!--style -"flex: 는 비율 " ex>1:1: , 1:2:1  -->
+        <div id="5" class="item" style="flex: 2">5</div>
+    </div>
+
+</body>
+</html>
