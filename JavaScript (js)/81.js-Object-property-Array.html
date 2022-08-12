@@ -13,33 +13,34 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-    // 첫번째 가위 바위 보
-    function printRps() {
-        let rpsNumber = parseInt(Math.random() * 3);  //0,1,2 정수 랜덤
-        let rpsString; // 문자열
-    
-        switch (rpsNumber) {
-            case 0:
-                rpsString = "가위";
-                break;
-            case 1:
-                rpsString = "바위";
-                break;
-            case 2:
-                rpsString = "보";
-                break;
-        }
-        console.log(rpsString); // 여기출력 이 나중에 2번 반복으로 사용
-    }
+        //객체 내에 배열 적용
+        //콤마 빼먹지 말자
 
-    // printRps();
-    // printRps();
-    // printRps();
-    // printRps();   이렇게 출력하지말고, for 사용
+        let a ={
+            name: "ahn",
+            score: [90, 80 ,71 ,89],   //배열
+        };
 
-    for (let i = 0; i < 4; i++) { // 2번 반복함 을 출력
-        printRps();
-    }
+        console.log(a.score[0]);
+
+        console.log("for 사용");
+
+        for(i =0; i<4; i++){    
+            console.log(a.score[i]);
+        };
+
+        //배열 값 변경
+        console.log("배열 값 변경");
+        // console.log(a.score); [5,6,7,8] 로 변경
+
+        a.score[0] = 5;
+        a.score[1] = 6;
+        a.score[2] = 7;
+        a.score[3] = 8;
+
+        console.log(a.score);
+
+
     </script>
 </body>
 </html>

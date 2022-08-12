@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- h1.note#head$*3>lorem1^h1.error#head$@4*3>lorem1     @4 : id 4,5,6 를 만들기 위해 -->
+    <h1 class="note" id="head1">
+        Lorem.
+    </h1>
+    <h1 class="note" id="head2">
+        Eveniet?
+    </h1>
+    <h1 class="note" id="head3">
+        Libero.
+    </h1>
+    <h1 class="error" id="head4">
+        Lorem.
+    </h1>
+    <h1 class="error" id="head5">
+        Debitis?
+    </h1>
+    <h1 class="error" id="head6">
+        Harum?
+    </h1>
+    <h1 class="error" id="head7">
+        Ahn seojung
+    </h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script>
+        // classList  :  Class 추가 삭제 ,콘솔로 확인하기
+
+        // head2 의 클래스 삭제 
+        document.querySelector("#head2").classList.remove("note");
+        
+        //head5 의 클래스 추가
+        document.querySelector("#head5").classList.add("note");
+
+        // head7의 name클래스 추가 , error클래스 삭제 
+       let head7 = document.querySelector("#head7")
+       head7.classList.add("name");
+       head7.classList.remove("error");
+
+
+
+
+        // classList  :  Class 추가 삭제 ,콘솔로 확인하기
+
+        // let head1 = document.querySelector("#head1");
+        // //클래스 값 읽기
+        // // head1의 클레스값 읽기
+        // console.log("head1.className");
+        // console.log(head1.getAttribute("class"));
+
+        // //클래스 추가
+        // head1.classList.add("error");
+
+        // //클래스 삭제 
+        // head1.classList.remove("note");
+
+        // //#head2,3 요소 error 클래스 추가 , note 클래스 삭제
+
+        // let head2 = document.querySelector("#head2");
+        // head2.classList.add("error");
+        // head2.classList.remove("note");
+
+        // let head3 = document.querySelector("#head3");
+        // head3.classList.add("error");
+        // head3.classList.remove("note");
+        
+        // // head3 의  class 추가 삭제를 동시에 하기, 변수에 담기 
+        // let head3ClassList = document.querySelector("#head3").classList;
+        // head3ClassList.add("error");
+        // head3ClassList.remove("remove");
+
+
+
+    </script>
+</body>
+</html>

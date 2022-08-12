@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+    </style>
+</head>
+<body>
+    
+    <!-- h1>lorem1^p>lorem2+span>lorem1 -->
+    <h1>
+        Lorem.
+    </h1>
+    <p>
+        Lorem, ipsum.
+        <span>
+            Lorem.
+        </span>
+    </p>
+    
+    <h2>
+        
+    </h2>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script>
+        
+        document.querySelector("h1").textContent 
+        // document 는 모든 element를 알고있다.
+        // Ex) .querySelector():  기능은 동적 작동, 특정 element를 찾아달라. 
+        // Ex) .textcontent :     무엇을? -> 값, 속성 , property
+
+        // tip,  property : () 괄호 없음.
+        // tip,  method : () 괄호 붙은 것.
+        // property 와 method 를 묶어 member 라고함
+                                                        
+        console.log(document.querySelector("h1").textContent); //콘솔 출력 
+
+        let a  = document.querySelector("h1").textContent; // a 에 member 적용
+        document.querySelector("h2").textContent = a ;  // h2 화면 출력
+
+        // https://www.w3schools.com/jsref/dom_obj_document.asp
+
+    </script>
+</body>
+</html>

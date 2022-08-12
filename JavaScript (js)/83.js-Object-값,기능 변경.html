@@ -13,33 +13,28 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-    // 첫번째 가위 바위 보
-    function printRps() {
-        let rpsNumber = parseInt(Math.random() * 3);  //0,1,2 정수 랜덤
-        let rpsString; // 문자열
-    
-        switch (rpsNumber) {
-            case 0:
-                rpsString = "가위";
-                break;
-            case 1:
-                rpsString = "바위";
-                break;
-            case 2:
-                rpsString = "보";
-                break;
-        }
-        console.log(rpsString); // 여기출력 이 나중에 2번 반복으로 사용
-    }
+        let a={
+            name:"ahn",
+            drink: function(){ 
+                console.log("술을 마신다");
+            },
 
-    // printRps();
-    // printRps();
-    // printRps();
-    // printRps();   이렇게 출력하지말고, for 사용
+        };
 
-    for (let i = 0; i < 4; i++) { // 2번 반복함 을 출력
-        printRps();
-    }
+        console.log(a.name);
+        a.drink();
+
+        a.name = "seojung"; // 이름변경
+        
+        
+        a.drink = function(){ 
+                    console.log("막걸리를 마신다");
+                }; // 함수도 변경가능
+            
+                           
+        console.log(a.name); // a.name 출력
+        a.drink(); //a.drink 함수 출력
+
     </script>
 </body>
 </html>

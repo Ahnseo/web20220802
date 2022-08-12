@@ -13,33 +13,20 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script>
-    // 첫번째 가위 바위 보
-    function printRps() {
-        let rpsNumber = parseInt(Math.random() * 3);  //0,1,2 정수 랜덤
-        let rpsString; // 문자열
-    
-        switch (rpsNumber) {
-            case 0:
-                rpsString = "가위";
-                break;
-            case 1:
-                rpsString = "바위";
-                break;
-            case 2:
-                rpsString = "보";
-                break;
+        // this :  실행되는 메소드가 소속된 객체
+
+        let a ={
+            name : "ahn",
+            sing: function (){
+                console.log(  this.name  + "노래를 부릅니다."); //메소드 안에서~ name 에 접근하고싶다면,  this. ~~ 
+            },                                               // this : a 객체를 의미
         }
-        console.log(rpsString); // 여기출력 이 나중에 2번 반복으로 사용
-    }
 
-    // printRps();
-    // printRps();
-    // printRps();
-    // printRps();   이렇게 출력하지말고, for 사용
+        console.log(a.name);
+        a.sing(); //name 과 sing  출력됨
 
-    for (let i = 0; i < 4; i++) { // 2번 반복함 을 출력
-        printRps();
-    }
+        
+
     </script>
 </body>
 </html>
